@@ -18,12 +18,12 @@ const Menu = () => {
     return (
         <div className={styles.container}>
             <ul className={styles.ul}>
-                <li style={scrollStyle6} data-text={'Home'} className={styles.li}><a href={'##'}><span><AiFillHome /></span></a>Home</li>
-                <li style={scrollStyle5} data-text={'About'} className={styles.li}><a href={'##'}><span><IoIosInformationCircleOutline /></span></a>About</li>
-                <li style={scrollStyle4} data-text={'Services'} className={styles.li}><a href={'##'}><span><MdOutlineMiscellaneousServices /></span></a>Services</li>
-                <li style={scrollStyle3} data-text={'Portfolio'} className={styles.li}><a href={'##'}><span><FaRProject /></span></a>Portfolio</li>
-                <li style={scrollStyle2} data-text={'Team'} className={styles.li}><a href={'##'}><span><FaTeamspeak /></span></a>Team</li>
-                <li style={scrollStyle1} data-text={'Contacts'} className={styles.li}><a href={'##'}><span><GiPhone /></span></a>Contacts</li>
+                <li style={scrollStyle6} data-text={'HOME'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><AiFillHome /></span>Home</a></li>
+                <li style={scrollStyle5} data-text={'ABOUT'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><IoIosInformationCircleOutline /></span>About</a></li>
+                <li style={scrollStyle4} data-text={'SERVICES'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><MdOutlineMiscellaneousServices /></span>Services</a></li>
+                <li style={scrollStyle3} data-text={'PORTFOLIO'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><FaRProject /></span>Portfolio</a></li>
+                <li style={scrollStyle2} data-text={'TEAM'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><FaTeamspeak /></span>Team</a></li>
+                <li style={scrollStyle1} data-text={'CONTACTS'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><GiPhone /></span>Contacts</a></li>
             </ul>
         </div>
     );
