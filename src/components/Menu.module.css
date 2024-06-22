@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    gap: 50px;
+    /*gap: 50px;*/
 }
 
 .ul {
@@ -205,4 +205,12 @@
 
 .ul2 .li2:hover .a2 .span2 {
     opacity: 1;
+}
+
+@media only screen and (max-width: 576px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
 }
