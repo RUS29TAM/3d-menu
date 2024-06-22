@@ -2,9 +2,11 @@ import React from 'react';
 import styles from './Menu.module.css';
 import {AiFillHome} from "react-icons/ai";
 import {IoIosInformationCircleOutline} from "react-icons/io";
-import {MdOutlineMiscellaneousServices} from "react-icons/md";
+import {MdOutlineAddAPhoto, MdOutlineMiscellaneousServices, MdOutlinePriceCheck} from "react-icons/md";
 import {GiPhone} from "react-icons/gi";
-import {FaRProject, FaTeamspeak} from "react-icons/fa";
+import {FaDatabase, FaRProject, FaTeamspeak} from "react-icons/fa";
+import {PiAddressBookLight, PiLinkSimple} from "react-icons/pi";
+import {IoDocumentsOutline} from "react-icons/io5";
 
 
 const style1 = {'--i': '1'} as React.CSSProperties;
@@ -33,12 +35,12 @@ const Menu = () => {
                 <li style={style1} data-text={'CONTACTS'} className={styles.li}><a className={styles.a} href={'##'}><span className={styles.span}><GiPhone /></span>Contacts</a></li>
             </ul>
             <ul className={styles.ul2}>
-                <li style={style12} data-text={'HOME'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><AiFillHome /></span>Home</a></li>
-                <li style={style11} data-text={'ABOUT'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><IoIosInformationCircleOutline /></span>About</a></li>
-                <li style={style10} data-text={'SERVICES'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><MdOutlineMiscellaneousServices /></span>Services</a></li>
-                <li style={style9} data-text={'PORTFOLIO'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><FaRProject /></span>Portfolio</a></li>
-                <li style={style8} data-text={'TEAM'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><FaTeamspeak /></span>Team</a></li>
-                <li style={style7} data-text={'CONTACTS'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><GiPhone /></span>Contacts</a></li>
+                <li style={style12} data-text={'LINKS'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><PiLinkSimple /></span>Links</a></li>
+                <li style={style11} data-text={'PHOTO'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><MdOutlineAddAPhoto /></span>Photo</a></li>
+                <li style={style10} data-text={'DB'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><FaDatabase /></span>Db</a></li>
+                <li style={style9} data-text={'DOCUMENTS'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><IoDocumentsOutline /></span>Documents</a></li>
+                <li style={style8} data-text={'ADDRESS'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><PiAddressBookLight /></span>Address</a></li>
+                <li style={style7} data-text={'PRICE'} className={styles.li2}><a className={styles.a2} href={'##'}><span className={styles.span2}><MdOutlinePriceCheck /></span>Price</a></li>
             </ul>
         </div>
     );
