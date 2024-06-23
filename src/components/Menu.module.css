@@ -1,8 +1,18 @@
 .container {
     display: flex;
     /*gap: 50px;*/
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+.wrapperRight {
+    padding-right: 40px;
+}
+
+.wrapperLeft {
+    padding-right: 120px;
+}
 .ul {
     position: relative;
     transform: skewY(-15deg);
@@ -10,11 +20,10 @@
 .ul2 {
     position: relative;
     transform: skewY(15deg);
-    bottom: 10px;
 }
 
 :root {
-    --i: ;
+    --i: 0;
 }
 
 .ul .li {
@@ -67,7 +76,8 @@
     content: '';
     position: absolute;
     top: 0;
-    left: 230px;
+    /*left: 230px;*/
+    right: -40px;
     width: 40px;
     height: 100%;
     background: #494a51;
@@ -98,6 +108,8 @@
     color: rgba(0, 0, 0, 0.15);
     font-weight: 600;
     font-size: 1.5em;
+    letter-spacing: 0.05em;
+
     background: #3e3f46;
     filter: brightness(0.9);
     transform-origin: bottom;
@@ -186,7 +198,8 @@
 .ul2 .li2 .a2 .span2 {
     position: absolute;
     top: 0;
-    left: 230px;
+    /*left: 230px;*/
+    right: -40px;
     width: 40px;
     text-align: center;
     height: 100%;
